@@ -11,6 +11,6 @@ $base64 = [System.Convert]::ToBase64String($bytes)
 $basicAuthValue = "Basic $base64"
 
 $headers = @{ Authorization = $basicAuthValue }
-$result = Invoke-WebRequest -uri $hostname -Headers $headers
+$result = Invoke-WebRequest -uri $url -Headers $headers
 
 Write-Host $result

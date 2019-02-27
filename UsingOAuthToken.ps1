@@ -15,7 +15,7 @@ $url = $hostname+$endpoint
 
 Write-Host "Connecting to URL: $url"
 
-$token = "Bearer paste-token-here "
+$token = "Bearer paste-token-here"
 
 $headers = @{ Authorization = $token }
 

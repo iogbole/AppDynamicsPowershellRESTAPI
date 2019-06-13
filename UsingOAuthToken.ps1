@@ -1,4 +1,4 @@
-#comment the first 3 lines if you're not using a proxy 
+#comment the first 3 lines if you're not using proxy 
 
 [system.net.webrequest]::defaultwebproxy = new-object system.net.webproxy('proxyHost:ProxyPort')
 

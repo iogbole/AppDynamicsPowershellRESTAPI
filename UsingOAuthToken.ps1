@@ -1,6 +1,6 @@
+#comment the first 3 lines if you're not using a proxy 
 
-
-system.net.webrequest]::defaultwebproxy = new-object system.net.webproxy('proxyHost:ProxyPort')
+[system.net.webrequest]::defaultwebproxy = new-object system.net.webproxy('proxyHost:ProxyPort')
 
 [system.net.webrequest]::defaultwebproxy.credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials
 
